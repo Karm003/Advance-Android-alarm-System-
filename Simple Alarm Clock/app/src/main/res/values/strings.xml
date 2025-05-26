@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Advance Alarm System</string>
+    <string name="arg_alarm_obj">arg_alarm_obj</string>
+    <string name="bundle_alarm_obj">bundle_alarm_obj</string>
+    <string name="alarm_title">Alarm</string>
+    <string name="dayNightTheme">dayNightTheme</string>
+    <string name="no_snoozes_left">No Snoozes Left</string>
+</resources>

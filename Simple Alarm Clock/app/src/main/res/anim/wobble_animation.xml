@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/cycle_interpolator"
+    android:repeatMode="restart"
+    android:repeatCount="infinite">
+    
+    <!-- Slow rotation animation for gentle wobble effect -->
+    <rotate
+        android:duration="800"
+        android:fromDegrees="-5"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toDegrees="5"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse" />
+        
+    <!-- Subtle translation for a natural ringing motion -->
+    <translate
+        android:duration="800"
+        android:fromXDelta="-2%"
+        android:toXDelta="2%"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse" />
+        
+    <!-- Zoom in/out animation for pulsing effect -->
+    <scale
+        android:duration="1200"
+        android:fromXScale="0.95"
+        android:toXScale="1.05"
+        android:fromYScale="0.95"
+        android:toYScale="1.05"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse" />
+</set> 

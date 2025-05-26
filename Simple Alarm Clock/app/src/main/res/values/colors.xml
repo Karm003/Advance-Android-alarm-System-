@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B4</color> <!-- Deep Purple 500 -->
+    <color name="colorPrimaryDark">#D714092C</color> <!-- Deep Purple 700 -->
+    <color name="colorAccent">#3F51B4</color> <!-- Cyan A400 (Replaced Pink A200) -->
+    <color name="white">#FFFFFF</color> <!-- White -->
+    <color name="translucent_grey">#B3B0BEC5</color> <!-- Grey with translucency -->
+    <color name="translucent_grey2">#77132D3A</color> <!-- Grey with translucency -->
+    <color name="new_color">#3883B6</color> <!-- Green 500 -->
+    <color name="toggleButtonBg">#3F51B5</color> <!-- Indigo 500 -->
+    <color name="textColor">#212121</color> <!-- Dark Grey for readability -->
+    <color name="redColor">#86FF1212</color>
+</resources>

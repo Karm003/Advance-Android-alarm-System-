@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/new_color"
+android:id="@+id/linearLayout"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".activities.RingActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Wake Up!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:padding="16dp"
+        android:text="Solve Puzzle to turn of the alarm."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+    android:id="@+id/snooze_info_text"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Snoozes remaining: 0/0"
+    android:textAlignment="center"
+    android:textColor="@color/white"
+    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/instruction_text" />
+
+    <ImageView
+        android:id="@+id/activity_ring_clock"
+        android:layout_width="272dp"
+        android:layout_height="253dp"
+        app:layout_constraintBottom_toTopOf="@+id/puzzle_options_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/snooze_info_text"
+        app:layout_constraintVertical_bias="0.518"
+        app:srcCompat="@drawable/ic_alarm_white_24dp" />
+
+    <LinearLayout
+    android:id="@+id/puzzle_options_container"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="visible"
+        android:layout_marginBottom="10dp"
+    app:layout_constraintBottom_toTopOf="@+id/snooze_button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginHorizontal="20dp"
+
+        >
+
+    <Button
+        android:id="@+id/math_puzzle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Math Puzzle"
+        android:textColor="@color/white"
+        android:background="@color/translucent_grey2"
+        android:layout_marginBottom="7dp"/>
+
+    <Button
+        android:id="@+id/memory_puzzle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Memory Puzzle"
+        android:textColor="@color/white"
+        android:background="@color/translucent_grey2"
+        android:layout_marginBottom="7dp"/>
+
+    <Button
+        android:id="@+id/pattern_puzzle_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pattern Puzzle"
+        android:textColor="@color/white"
+        android:background="@color/translucent_grey2"
+        android:layout_marginBottom="7dp"/>
+
+    <Button
+        android:id="@+id/qr_scanner_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan QR Code"
+        android:textColor="@color/white"
+        android:background="@color/translucent_grey2"
+        android:layout_marginBottom="7dp"/>
+
+</LinearLayout>
+
+<Button
+    android:id="@+id/snooze_button"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Snooze"
+    android:textFontWeight="1200"
+    android:layout_marginHorizontal="20dp"
+    android:layout_marginBottom="10pt"
+    android:textColor="@color/white"
+    android:background="@color/redColor"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
